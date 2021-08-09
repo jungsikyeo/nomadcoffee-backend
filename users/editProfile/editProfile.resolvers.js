@@ -1,10 +1,10 @@
 import bcrypt from "bcrypt";
 import client from "../../client";
-import { protectResolver } from "../users.utils";
+import { protectedResolver } from "../users.utils";
 
 export default {
   Mutation: {
-    editProfile: protectResolver(
+    editProfile: protectedResolver(
       async (
         _,
         {
